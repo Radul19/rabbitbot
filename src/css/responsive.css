@@ -1,0 +1,212 @@
+@media only screen and (max-width: 700px) {
+  /*/////////////////MAIN//////////////*/
+  main {
+    height: 60vh;
+  }
+  main .wave {
+    bottom: -1vh;
+  }
+  main .boxes {
+    width: 60vw;
+    right: -10vw;
+    bottom: -5vh;
+  }
+  main p {
+    grid-column: 2 / 8;
+  }
+
+  /*  BACK END  */
+  .backend h1 {
+    text-align: center;
+    grid-row: 2 / 3;
+    grid-column: 3 / 11;
+  }
+  .backend p {
+    text-align: center;
+    grid-column: 2 / 12;
+    grid-row-start: 3;
+    margin: 1em 1.5em;
+  }
+  .backend img {
+    grid-row: 7 / 11;
+    grid-column: 5 / 9;
+    width: 50vw;
+  }
+
+  .backend .line {
+    display: none;
+  }
+
+  /* FRONT END*/
+  .frontend h1 {
+    text-align: center;
+    grid-row: 2 / 3;
+    grid-column: 3 / 11;
+    margin: 0px;
+  }
+  .frontend p {
+    text-align: center;
+    grid-column: 2 / 12;
+    grid-row: 3 / 7;
+    margin: 0px 1.5em;
+  }
+  .frontend .pc {
+    grid-row: 8 / 12;
+    grid-column: 5 / 9;
+    width: 40vw;
+  }
+
+  .frontend .leftLine {
+    display: none;
+  }
+
+  /*  PHONE responsive page */
+  .responsive h1 {
+    text-align: center;
+    grid-row: 2 / 3;
+    grid-column: 3 / 11;
+    margin: 0px;
+  }
+  .responsive-text {
+    /* display: none; */
+    grid-column: 2 / 12;
+    grid-row: 7 / 11;
+    align-self: center;
+  }
+  .frontend .bubbles {
+    width: 35vw;
+    top: -3vh;
+  }
+  .phoneShape {
+    grid-column: 3 / 11;
+    grid-row: 3/ 6;
+    /* margin: 1.5em 0px; */
+    height: 70%;
+    align-self: center;
+  }
+
+  .phoneShape .blackTop {
+    grid-column: 1 / 2;
+    /* margin-left: .1em; */
+    border-radius: 15px 0px 0px 15px;
+    grid-row: 1 / 11;
+    margin-left: -1px;
+    margin-top: -1px;
+  }
+  .phoneShape .blackBottom {
+    grid-column: 11 / -1;
+    grid-row: 1 / -1;
+    border-radius: 0px 18px 20px 0px;
+    margin-right: -1px;
+    margin-top: -1px;
+    height: 101%;
+  }
+  .phoneShape .blackBottom .blackBottomCircle {
+    grid-row: 4 / 5;
+  }
+
+  .phoneShape .redBox1 {
+    grid-column: 2 / 4;
+    grid-row: 2 / 6;
+  }
+
+  .phoneShape .blueRectangle {
+    grid-column: 4 / 9;
+    grid-row: 8 / 10;
+  }
+
+  .phoneShape .blueCircle {
+    grid-column: 4 / 6;
+    grid-row: 2 / 5;
+  }
+
+  .phoneShape .linesContainer1 {
+    grid-column: 6 / 11;
+    grid-row: 2 / 5;
+  }
+  .phoneShape .linesContainer2 {
+    grid-column: 2 / 4;
+    grid-row: 6 / 10;
+  }
+  .smallBox1,
+  .smallBox2,
+  .smallBox3 {
+    grid-row: 5 / 8;
+  }
+  .smallBox1 {
+    grid-column: 4 / 6;
+  }
+  .smallBox2 {
+    grid-column: 6 / 8;
+  }
+  .smallBox3 {
+    grid-column: 7 / 9;
+  }
+  .rightBox {
+    grid-column: 9 / 11;
+    grid-row: 5 / 10;
+  }
+
+  /* ABOUT ME PAGE*/
+  .about {
+    padding: 0px 1em;
+    height: 130vh;
+  }
+  .about h1 {
+    margin: 1em auto;
+  }
+  .sect-Bio {
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+  }
+  .sect-Bio img {
+    margin: 0px;
+    width: calc(10vh + 10vw);
+    height: calc(10vh + 10vw);
+  }
+  .sect-Bio p {
+    width: 60%;
+    margin: 1em 0px;
+    text-align: center;
+  }
+
+  .sect-Colums {
+    margin: 2em 0px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .sect-Colums div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 2em;
+  }
+  .sect-Colums #aboutArrow {
+    grid-column: 1 / 3;
+    align-self: center;
+  }
+  .sect-Colums div p {
+    margin: 0px;
+    align-self: center;
+    width: 80%;
+  }
+
+  /* CONTACT */
+  .form_div{
+    margin: 1em auto ;
+  }
+  .cage {
+    width: 75vw;
+    overflow-y: hidden;
+    margin: 0px auto;
+  }
+  .contact_subtitle{
+    margin: 25vh 0px 0px 15vw !important;
+  }
+
+  .contact button{
+    /* margin: 10vh auto 0px; */
+    width: 60%;
+  }
+}

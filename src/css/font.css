@@ -1,0 +1,6 @@
+/* File: font.css */
+@font-face {
+    font-family: 'Nasalization';
+    src: local('Nasalization'),
+         url('./Fonts/nasalization-rg.tff') format('truetype')
+}

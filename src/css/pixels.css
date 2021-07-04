@@ -1,0 +1,159 @@
+main .pixelCage {
+  /* background-color: red; */
+  width: 98vw;
+  margin-left: 1vw;
+  height: 1vw;
+  position: absolute;
+  display: flex;
+  /* display: grid; */
+  /* grid-template-columns: repeat(20, 1fr); */
+  bottom: 0px;
+  justify-content: space-between;
+}
+
+main .pixel {
+  height: 1.1vw;
+  width: 1.1vw;
+  border-radius: 50%;
+  /* background-color: #59adff; */
+  background-color: #F7F7F7;
+  /* margin-left: 48vw; */
+}
+main .pixelx {
+  /* background-color: #000000; */
+  animation: pixelx 0.1s ease-in-out 1;
+}
+
+main .pixel1 {
+  /* background-color: #59adff; */
+  animation: pixel 5.5s ease-in-out 1;
+}
+
+main .pixel2 {
+  /* background-color: #18324d; */
+  animation: pixel2 4.5s ease-in-out 1;
+}
+main .pixel3 {
+  /* background-color: #59ff59; */
+  animation: pixel3 7s ease-in-out 1;
+}
+main .pixel4 {
+  /* background-color: #ffe159; */
+  animation: pixel4 6s ease-in-out 1;
+}
+main .pixel5 {
+  animation: pixel5 4.5s ease-in-out 1;
+}
+main .pixel6 {
+  animation: pixel6 5.5s ease-in-out 1;
+}
+main .pixel7 {
+  animation: pixel7 7s ease-in-out 1;
+}
+main .pixel8 {
+  animation: pixel8 6s ease-in-out 1;
+}
+@keyframes pixel {
+  0% {
+    /* margin-top: 0px; */
+  }
+  70% {
+    opacity: 0.5;
+  }
+  100% {
+    margin-top: -170px;
+    opacity: 0;
+  }
+}
+@keyframes pixel2 {
+  0% {
+    /* margin-top: 0px; */
+  }
+  70% {
+    opacity: 0.5;
+  }
+  100% {
+    margin-top: -100px;
+    opacity: 0;
+  }
+}
+@keyframes pixel3 {
+  0% {
+    /* margin-top: 0px; */
+  }
+  70% {
+    opacity: 0.5;
+  }
+  100% {
+    margin-top: -130px;
+    opacity: 0;
+  }
+}
+@keyframes pixel4 {
+  0% {
+    /* margin-top: 0px; */
+  }
+  70% {
+    opacity: 0.5;
+  }
+  100% {
+    margin-top: -200px;
+    opacity: 0;
+  }
+}
+@keyframes pixel5 {
+  0% {
+    /* margin-top: 0px; */
+  }
+  70% {
+    opacity: 0.5;
+  }
+  100% {
+    margin-top: -155px;
+    opacity: 0;
+  }
+}
+@keyframes pixel6 {
+  0% {
+    /* margin-top: 0px; */
+  }
+  70% {
+    opacity: 0.5;
+  }
+  100% {
+    margin-top: -115px;
+    opacity: 0;
+  }
+}
+@keyframes pixel7 {
+  0% {
+    /* margin-top: 0px; */
+  }
+  70% {
+    opacity: 0.5;
+  }
+  100% {
+    margin-top: -180px;
+    opacity: 0;
+  }
+}
+@keyframes pixel8 {
+  0% {
+    /* margin-top: 0px; */
+  }
+  70% {
+    opacity: 0.5;
+  }
+  100% {
+    margin-top: -140px;
+    opacity: 0;
+  }
+}
+@keyframes pixelx {
+  0% {
+    /* margin-top: 0px; */
+  }
+  100% {
+    margin-top: -1px;
+  }
+}

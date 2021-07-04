@@ -1,0 +1,146 @@
+/* ----------------------------------------*/
+/* --------------CONTACT PAGE--------------*/
+/* ----------------------------------------*/
+
+.contact {
+  background-color: #2d2d30;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  color: #eeeeee;
+  flex-direction: column;
+}
+.contact .contact_subtitle{
+  width: 30vw;
+  margin: 25vh auto 0px; 
+  /* background-color: #808080; */
+  overflow-x: hidden;
+}
+.subtitle_div{
+  display: flex;
+  width: 110%;
+  transition: all 1s;
+}
+.contact h2{
+  font-family: 'Calibri';
+  font-weight: 100;
+  font-size: 1em;
+  color: #d8d8d8;
+  width: 100%;
+}
+
+.cage {
+  display: flex;
+  /* background-color: cornflowerblue; */
+  height: 40vh;
+  width: 30vw;
+  margin: 0px auto 5vh;
+  overflow-x: hidden;
+  position: relative;
+  overflow-y: hidden;
+}
+.cageHide {
+  position: absolute;
+  display: flex;
+  width: 201%;
+  height: 100%;
+  /* margin-left: -100%; */
+  transition: all 1s;
+}
+.insideCage {
+  /* background-color: lightskyblue; */
+  box-sizing: border-box;
+  width: 100%;
+  /* height: 100%; */
+  border-bottom: 4px solid #808080;
+  border-right: 5px solid #808080;
+  border-radius: 5px;
+  display: flex;
+  
+}
+.insideCage p {
+  text-align: right;
+  line-height: 2em;
+  align-self: center;
+  padding: 1em 1.5em;
+  font-weight: 100;
+  font-size: calc(11px + (15 - 11) * ((100vw - 300px) / (1600 - 300)));
+  
+}
+
+form {
+  width: 101%;
+  height: 100%;
+  /* background-color: lightslategray; */
+  display: flex;
+  flex-direction: column;
+}
+.form_div{
+  width: 100%;
+  display: flex;
+  margin: 2em 0px;
+}
+form input {
+  width: 60%;
+  font-size: calc(13px + (16 - 13) * ((100vw - 300px) / (1600 - 300)));
+  padding: 0.2em 0.5em;
+  background-color: #80808000;
+  border: 0px;
+  border-bottom: 2px solid #808080;
+  border-radius: 2px;
+  margin: 0px auto;
+  color: #eeeeee;
+  text-align: center;
+}
+
+form textarea{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: calc(13px + (16 - 13) * ((100vw - 300px) / (1600 - 300)));
+  padding: 0.2em 0.5em;
+  background-color: #80808000;
+  border: 0px;
+  border-bottom: 2px solid #808080;
+  border-radius: 2px;
+  margin: 0px auto;
+  color: #eeeeee;
+  width: 65%;
+}
+
+form textarea:focus{
+  outline: none;
+}
+
+/*
+form label {
+  position: absolute;
+  color: black;
+}
+
+form button {
+  font-family: "Nasalization";
+  width: 15vw;
+  font-size: 1.3em;
+  padding: 0.5em 0.2em;
+  margin: auto;
+} */
+
+.contact button {
+  color: #eeeeee;
+  width: 15vw;
+  margin: 3em auto;
+  font-size: calc(14px + (21 - 14) * ((100vw - 300px) / (1600 - 300)));
+  padding: 0.7em 1em;
+  background-color: #22222200;
+  border: 2px solid #808080;
+  transition: all 0.4s;
+}
+
+.contact button:hover {
+  letter-spacing: 2px;
+  width: 17vw;
+}
+
+#arrow{
+  cursor: pointer;
+  width: 5%;
+}

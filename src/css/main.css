@@ -1,0 +1,508 @@
+/*font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));*/
+@font-face {
+  font-family: 'Nasalization';
+  src: url('../Fonts/NasalizationRg-Regular.woff2') format('woff2'),
+      url('../Fonts/NasalizationRg-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Nasalization";
+  overflow-x: hidden;
+  /* overflow-y: hidden; */
+  background-color: #2d2d30;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+input:focus{
+  outline: none;
+}
+
+/* ----------------------------------------*/
+/* -----------------HEADER-----------------*/
+/* ----------------------------------------*/
+header {
+  position: sticky;
+  top: 0;
+  /* background-color: #2d2d30; */
+  /* background-color: red; */
+  color: #eeeeee;
+  height: 7vh;
+  width: 100vw;
+  /* display: grid; */
+  display: flex;
+  grid-template-columns: repeat(6, 1fr);
+  transition: all 0.3s ease-in-out;
+  z-index: 1000;
+  /* mix-blend-mode: difference; */
+  
+}
+header div {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column: 2 / 6;
+  mix-blend-mode: inherit;
+  justify-content: space-evenly;
+  width: 50%;
+  margin: 0px auto;
+}
+header a {
+  justify-self: center;
+  margin: 1em 0px 0px;
+  /* width: 50%; */
+  display: inline-block;
+  font-size: calc(14px + (18 - 14) * ((100vw - 500px) / (1600 - 300)));;
+  transition: all 0.2s ease-in-out;
+  letter-spacing: 1px;
+  text-align: center;
+}
+a:-webkit-any-link {
+  color: inherit;
+}
+
+header a:hover {
+  letter-spacing: 4px;
+}
+header a:nth-child(3):hover {
+  letter-spacing: 3px;
+}
+/* ----------------------------------------*/
+/* -----------------MAIN-------------------*/
+/* ----------------------------------------*/
+
+main {
+  color: #f4f4f4;
+  height: 90vh;
+  overflow-y: hidden;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+  position: relative;
+  overflow-x: hidden;
+}
+main h1 {
+  color: #59adff;
+  grid-column: 2 / 10;
+  grid-row: 3;
+  /* font-size: 4.5em; */
+  /* font-size: 2.5em;   */
+  font-size: calc(34px + (72 - 34) * ((100vw - 300px) / (1600 - 300)));
+  margin: 0px;
+}
+main h2 {
+  grid-column: 2 / 10;
+  grid-row: 4;
+  margin: .7em 0px .5em;
+  /* font-size: 2.5em; */
+  /* font-size: 1.2em; */
+  font-size: calc(20px + (40 - 20) * ((100vw - 300px) / (1600 - 300)));
+  font-weight: 100;
+}
+main p {
+  /* font-family: 'Montserrat'; */
+  font-weight: 500;
+  grid-column: 2 / 7;
+  line-height: 1.2em;
+  grid-row: 6;
+  margin: 0em 0px;
+  /* font-size: 1.5em; */
+  /* font-size: .8em; */
+  font-size: calc(13px + (24 - 13) * ((100vw - 300px) / (1600 - 300)));
+}
+main span {
+  color: #59adff;
+}
+
+
+main .boxes {
+  position: absolute;
+  right: 0;
+  bottom: 0vh;
+  width: 40vw;
+}
+
+main .wave {
+  position: absolute;
+  bottom: -3vh;
+  width: 100vw;
+}
+
+
+/* ----------------------------------------*/
+/* -------------BACKEND PAGE---------------*/
+/* ----------------------------------------*/
+
+.backend {
+  color: #2d2d30;
+  position: relative;
+  width: 100vw;
+  height: 110vh;
+  background-color: #f7f7f7;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+}
+
+.backend img {
+  grid-column: 2 / 7;
+  grid-row: 2 / 9;
+  width: 35vw;
+  justify-self: center;
+  align-self: center;
+}
+
+.backend h1 {
+  grid-column: 7 / 12;
+  grid-row: 3 / 5;
+  /* font-size: 4em ; */
+  /* font-size: 2em ; */
+  font-size: calc(28px + (60 - 28) * ((100vw - 300px) / (1600 - 300)));
+  
+  text-align: right;
+  margin: 0px 4vw 0px;
+}
+
+.backend p {
+  grid-column: 7 / 12;
+  grid-row: 4 / 9;
+  line-height: 1.6em;
+  font-family: "Montserrat";
+  text-align: right;
+  margin: 2em 4vw 0px 3em;
+  /* font-size: 1.3em; */
+  /* font-size: .8em; */
+  font-size: calc(13px + (20 - 13) * ((100vw - 300px) / (1600 - 300)));
+}
+.backend .line {
+  margin-left: -2vw;
+  width: 0.5vw;
+  border-radius: 5px;
+  background-color: #2d2d30;
+  grid-column-start: 12;
+  grid-row: 3 / 10;
+}
+.cornerShape {
+  position: absolute;
+  bottom: 0vh;
+  border-bottom: 10vw solid #2d2d30;
+  border-right: 100vw solid transparent;
+}
+
+/* ----------------------------------------*/
+/* -------------FRONTEND PAGE--------------*/
+/* ----------------------------------------*/
+
+.frontend {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+  height: 100vh;
+  width: 100vw;
+}
+
+.frontend h1 {
+  margin: 0px;
+  color: #f4f4f4;
+  font-size: calc(28px + (60 - 28) * ((100vw - 300px) / (1600 - 300)));
+  grid-column: 2 / 6;
+  grid-row: 3 / 4;
+  justify-self: center;
+}
+
+.frontend p {
+  font-family: "Montserrat";
+  /* margin: 0px; */
+  color: #f4f4f4;
+  font-size: calc(13px + (20 - 13) * ((100vw - 300px) / (1600 - 300)));
+  line-height: 1.6em;
+  grid-column: 2 / 6;
+  grid-row: 4 / 9;
+  margin: 3vh 0vw 0px 5.5vw;
+  justify-self: center;
+  align-self: center;
+}
+
+.frontend .leftLine {
+  background-color: #f4f4f4;
+  width: 0.5vw;
+  border-radius: 5px;
+  grid-column-start: 2;
+  grid-row: 3 / 10;
+  margin-top: -2vh;
+}
+
+.frontend .pc {
+  grid-column: 7 / 12;
+  grid-row: 3 / 11;
+  width: 35vw;
+  justify-self: center;
+}
+
+.frontend .bubbles {
+  position: absolute;
+  width: 30vw;
+  top: -6vh;
+  right: 0;
+}
+
+/* ----------------------------------------*/
+/* -------------PROYECTS PAGE--------------*/
+/* ----------------------------------------*/
+
+.proyects {
+  display: flex;
+  height: 120vh;
+  width: 100vw;
+  flex-direction: column;
+  background-color: #ffe07d;
+  color: #2d2d30;
+}
+
+.proyects h1 {
+  margin: 5vh auto 3vh;
+}
+
+.sliderContainer {
+  width: 70vw;
+  height: 60vh;
+  /* background-color: #2d2d30; */
+  margin: 3vh auto 0px;
+  border-radius: 5px;
+  display: flex;
+  /* justify-content: space-between; */
+  transform-style: preserve-3d;
+  perspective: 200px;
+  position: relative;
+}
+
+.proyects button {
+  font-family: "Montserrat";
+  width: 10vw;
+  height: 5vh;
+  margin: 3vh auto;
+  border: none;
+  font-size: 1.2em;
+  font-weight: 600;
+  background-color: #ffe07d;
+  color: #2d2d30;
+  border: 3px solid #2d2d30;
+  transition: all 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+.proyects button:hover {
+  background-color: #2d2d30;
+  color: #ffe07d;
+  /* border: 3px solid #ffe07d; */
+  font-weight: 500;
+}
+
+.dotsContainer {
+  display: flex;
+  /* background-color: #2d2d30b0; */
+  width: 40vw;
+  height: 5vh;
+  margin: 0px auto;
+  justify-content: space-around;
+}
+.dots {
+  transition: all 0.2s ease-in-out;
+  z-index: 1000;
+}
+.dots:hover {
+  background-color: #2d2d30;
+  color: #ffe07d;
+  cursor: pointer;
+}
+.dotLeft {
+  display: flex;
+  margin: auto 0px;
+  /* background-color: red; */
+  font-size: 3em;
+}
+.dotRight {
+  display: flex;
+  margin: auto 0px;
+  /* background-color: blue; */
+  font-size: 3em;
+}
+.dotsCenter {
+  display: flex;
+}
+
+.dotsCenterIndex {
+  margin: auto 1vw;
+  background-color: #2d2d30;
+  border-radius: 50%;
+  width: 1vw;
+  height: 1vw;
+}
+
+iframe {
+  /* border: 1px solid black; */
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+/**/
+
+.scene {
+  width: 50vw;
+  height: 35vw;
+  position: relative;
+  perspective: 100vw;
+  margin: auto;
+  background-color: #ffe07d;
+}
+
+.carousel {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  transform: translateZ(5vw);
+  transition: all 1s ease-in-out;
+  /* transform: rotateY(240deg); */
+  z-index: 0;
+}
+.carousel__cell img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.carousel__cell {
+  border-radius: 10px;
+  margin: auto;
+  position: absolute;
+  width: 30vw;
+  height: 20vw;
+  left: 10vw;
+  top: 7.5vw;
+  background-color: #ffe07d;
+  /* opacity: 0.8; */
+}
+.screen {
+  background-color: #ffe07d;
+  position: absolute;
+  width: 110%;
+  height: 100%;
+  left: -5%;
+  /* z-index: 100; */
+  /* transform: rotateY(-240deg); */
+  transition: all 1s ease-in-out;
+}
+.carousel__cell:nth-child(1) {
+  transform: rotateY(0deg) translateZ(30vw);
+  /* z-index: 200; */
+}
+.carousel__cell:nth-child(2) {
+  transform: rotateY(60deg) translateZ(30vw);
+  /* z-index: 100; */
+}
+.carousel__cell:nth-child(3) {
+  transform: rotateY(120deg) translateZ(30vw);
+  /* z-index: 100; */
+}
+.carousel__cell:nth-child(4) {
+  transform: rotateY(180deg) translateZ(30vw);
+}
+.carousel__cell:nth-child(5) {
+  transform: rotateY(240deg) translateZ(30vw);
+}
+.carousel__cell:nth-child(6) {
+  transform: rotateY(300deg) translateZ(30vw);
+}
+
+/* ----------------------------------------*/
+/* --------------ABOUT PAGE----------------*/
+/* ----------------------------------------*/
+
+.about {
+  height: 145vh;
+  background-color: #f4f4f4;
+  display: flex;
+  padding: 0px 7.5vw;
+  flex-direction: column;
+  font-family: "Montserrat";
+}
+
+.about h1 {
+  margin: 7.5vh auto;
+  font-family: "Nasalization";
+  font-size: calc(23px + (40 - 23) * ((100vw - 300px) / (1600 - 300)));
+}
+
+.sect-Bio {
+  display: flex;
+  width: 80%;
+  height: 50vh;
+  /* background-color: royalblue; */
+  margin: 0px auto;
+  box-sizing: border-box;
+  
+}
+
+.sect-Bio img {
+  width: 30vh;
+  height: 30vh;
+  margin: 10vh 0px 10vh 10vh;
+  background-color: royalblue;
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+.sect-Bio p {
+  width: 40%;
+  /* height: 50%; */
+  margin: auto;
+  font-size: calc(10px + (16 - 10) * ((100vw - 300px) / (1600 - 300)));
+}
+
+.sect-Colums {
+  /* background-color: salmon; */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+  /* height: 60vh; */
+  margin: 10vh 0px 0px;
+}
+
+.sect-Colums div {
+  display: flex;
+  flex-direction: column;
+}
+.sect-Colums div img {
+  /* background-color: darkcyan; */
+  width: calc(4vw + 3vh);
+  height: calc(4vw + 3vh);
+  margin: 0px auto;
+}
+.sect-Colums div h2 {
+  font-weight: 500;
+  text-align: center;
+  margin: 1em 0px 0.7em;
+  font-size: calc(10px + (21 - 10) * ((100vw - 300px) / (1600 - 300)));
+}
+
+.sect-Colums div p {
+  /* background-color: crimson; */
+  width: 60%;
+  text-align: center;
+  margin: 0px auto;
+  font-size: calc(9px + (16 - 9) * ((100vw - 300px) / (1600 - 300)));
+}
+
